@@ -1,2 +1,2 @@
-# Curriculo-.tex
+# Curriculo .tex
 Curriculo .tex
