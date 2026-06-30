@@ -1,0 +1,2 @@
+# Curriculo-.tex
+Curriculo .tex
