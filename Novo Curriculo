@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper]{article}
+
+% Definições de codificação e margens
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.6in,right=0.6in,top=0.6in,bottom=0.6in]{geometry}
+
+% Fonte Helvetica (sans-serif) para leitura limpa e moderna
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Pacotes auxiliares
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Definição de cores (Paleta Slate/Blue moderna e executiva)
+\definecolor{primary}{HTML}{0F172A}   % Slate 900
+\definecolor{secondary}{HTML}{2563EB} % Blue 600
+\definecolor{text}{HTML}{334155}      % Slate 700
+\definecolor{lighttext}{HTML}{64748B} % Slate 500
+
+% Aplicação global da cor do texto principal
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{text}}
+
+% Configuração de links (oculta bordas, usa cor secundária)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondary,
+    urlcolor=secondary,
+    pdftitle={Curriculum Vitae - Paulo Cruz},
+    pdfauthor={Paulo Cruz}
+}
+
+% Remove paginação
+\pagestyle{empty}
+
+% Estilização das seções com linhas divisórias limpas
+\titleformat{\section}
+  {\color{primary}\normalfont\Large\bfseries\scshape}
+  {}{0em}
+  {}
+  [{\color{secondary}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% Configuração das listas (espaçamento compacto)
+\setlist[itemize]{leftmargin=12pt, labelsep=6pt, itemsep=3.5pt, topsep=2pt, parsep=0pt}
+
+\begin{document}
+
+% --- CABEÇALHO ---
+\begin{center}
+    {\Huge \bfseries \color{primary} PAULO CRUZ} \\
+    \vspace{6pt}
+    {\large \bfseries \color{secondary} Desenvolvedor Full-Stack \& Especialista em Infraestrutura de TI} \\
+    \vspace{8pt}
+    \small
+    \href{mailto:paulo19pj@gmail.com}{\faEnvelope\ paulo19pj@gmail.com} \quad | \quad
+    \href{https://github.com/paulocruz28}{\faGithub\ github.com/paulocruz28} \quad | \quad
+    \href{https://linkedin.com/in/paulocruz28}{\faLinkedin\ linkedin.com/in/paulocruz28} \quad | \quad
+    \faMapMarkerAlt\ Fortaleza - CE \quad | \quad
+    \href{https://wa.me/5585985629727}{\faWhatsapp\ +55 (85) 98562-9727}
+\end{center}
+
+\vspace{-4pt}
+
+% --- RESUMO PROFISSIONAL ---
+\section{Resumo Profissional}
+Desenvolvedor Full-Stack e Especialista em Infraestrutura de TI com sólida experiência no desenvolvimento de aplicações web de ponta a ponta, administração de servidores e segurança da informação. Especialista em desenhar arquiteturas integradas utilizando conteinerização (Docker), servidores web (Nginx) e automação de processos. Habilidade comprovada em modelagem de bancos de dados relacionais, desenvolvimento de APIs seguras e monitoramento de ativos críticos. Focado em alinhar eficiência de código com alta disponibilidade e conformidade operacional.
+
+% --- COMPETÊNCIAS ---
+\section{Competências Técnicas}
+\begin{itemize}
+    \item \textbf{Linguagens \& Front-end:} HTML5, CSS3, JavaScript (ES6+), Chart.js (Dashboards), FullCalendar v6 (Agendamento dinâmico).
+    \item \textbf{Back-end \& APIs:} Node.js, Express, RESTful APIs, Autenticação JWT (segurança e controle de sessões).
+    \item \textbf{Bancos de Dados:} PostgreSQL (15+), SQL Server, modelagem relacional, otimização de queries e integridade de dados.
+    \item \textbf{Infraestrutura \& DevOps:} Docker, Docker Compose, Nginx (Web Server e Proxy Reverso), Administração de Redes.
+    \item \textbf{Automação \& Integrações:} Google Apps Script (sincronização assíncrona e relatórios em tempo real com Google Sheets).
+    \item \textbf{Segurança \& Operações:} Segurança da Informação (controle de acesso lógico, AD), gestão de rotinas de backup corporativo.
+\end{itemize}
+
+% --- PROJETOS DE DESTAQUE ---
+\section{Projetos de Destaque}
+
+\noindent
+\textbf{Sistema de Gestão para Clínica de Estética} \hfill \textbf{\color{lighttext}{Projeto Autônomo / Freelancer}} \\
+\textit{Desenvolvedor Full-Stack \& DevOps} \hfill \textbf{\color{lighttext}{2025 -- 2026}}
+\begin{itemize}
+    \item Concepção, arquitetura e desenvolvimento ponta a ponta (Full-Stack) de uma plataforma web integrada de gestão clínica, cobrindo fluxos financeiros, agendamento interativo e prontuários eletrônicos.
+    \item Criação de infraestrutura portátil e isolada utilizando \textbf{Docker} e \textbf{Docker Compose} para orquestração de serviços.
+    \item Implantação e configuração do \textbf{Nginx} atuando como servidor web e proxy reverso, aprimorando o roteamento e a segurança.
+    \item Construção de API RESTful robusta em \textbf{Node.js} com \textbf{Express}, implementando autenticação segura via \textbf{JWT} para a proteção de prontuários e dados confidenciais dos pacientes (aderente às boas práticas de segurança).
+    \item Modelagem e administração de banco de dados relacional com \textbf{PostgreSQL 15}, otimizando consultas e garantindo a consistência histórica e integridade referencial dos registros médicos.
+    \item Criação de interface responsiva e dinâmica em JavaScript nativo (vanilla), com painéis gerenciais alimentados por \textbf{Chart.js} e controle de agenda integrado com \textbf{FullCalendar v6}.
+    \item Implementação de microsserviço com \textbf{Google Apps Script} para sincronização em tempo real de dados com o Google Sheets, contemplando tolerância a falhas e estratégias de retry para contornar timeouts de rede.
+\end{itemize}
+
+% --- EXPERIÊNCIA PROFISSIONAL ---
+\section{Experiência Profissional}
+
+\noindent
+\textbf{Amazon Informática LTDA} \hfill \textbf{\color{lighttext}{Fortaleza - CE}} \\
+\textit{Técnico em Manutenção Sênior} \hfill \textbf{\color{lighttext}{2024}}
+\begin{itemize}
+    \item Atuação sênior no diagnóstico avançado de falhas físicas/lógicas, manutenção de hardware/software e suporte à infraestrutura.
+    \item Elaboração e execução de rotinas rigorosas de manutenção preventiva e preditiva, mitigando o risco de falhas operacionais.
+    \item Resolução de incidentes críticos de nível avançado (L3), garantindo a máxima estabilidade, segurança e conformidade das operações.
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent
+\textbf{Empresa Jornalística O POVO} \hfill \textbf{\color{lighttext}{Fortaleza - CE}} \\
+\textit{Técnico de Suporte I} \hfill \textbf{\color{lighttext}{2018 -- 2024}}
+\begin{itemize}
+    \item Suporte técnico consultivo de níveis L1 e L2 aos usuários, garantindo a produtividade diária em softwares e hardwares homologados.
+    \item Monitoramento contínuo da integridade e desempenho de ativos de rede, servidores dedicados e sistemas internos de produção.
+    \item Execução ativa de protocolos de Segurança da Informação, validando backups corporativos e auditando acessos lógicos.
+    \item Gestão ativa do parque tecnológico, zelando pelo ciclo de vida, integridade e conformidade de equipamentos corporativos.
+\end{itemize}
+
+\end{document}
