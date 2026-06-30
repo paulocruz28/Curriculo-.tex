@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 
 % Definições de codificação e margens
-\usepackage[utf8]{inputenc}
+
 \usepackage[T1]{fontenc}
 \usepackage[left=0.6in,right=0.6in,top=0.6in,bottom=0.6in]{geometry}
 
@@ -65,7 +65,7 @@
     \href{mailto:paulo19pj@gmail.com}{\faEnvelope\ paulo19pj@gmail.com} \quad | \quad
     \href{https://github.com/paulocruz28}{\faGithub\ github.com/paulocruz28} \quad | \quad
     \href{https://linkedin.com/in/paulocruz28}{\faLinkedin\ linkedin.com/in/paulocruz28} \quad | \quad
-    \faMapMarkerAlt\ Fortaleza - CE \quad | \quad
+    \faMapMarker\ Fortaleza - CE \quad | \quad
     \href{https://wa.me/5585985629727}{\faWhatsapp\ +55 (85) 98562-9727}
 \end{center}
 
